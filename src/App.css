@@ -1,0 +1,64 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Override your component styles to make them work for layout */
+.App > div {
+  margin-bottom: 40px;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Make cards full width for layout */
+.App div[class*='Card'] {
+  width: 100% !important;
+  min-width: 100% !important;
+  padding: 20px !important;
+  margin: 20px 0 !important;
+}
+
+/* Make table full width */
+.App table,
+.App div[class*='Table'] {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+/* Style the hero image area */
+.App div:first-child {
+  text-align: center;
+  padding: 60px 20px !important;
+  margin-bottom: 40px;
+}
+
+/* Make images responsive */
+.App img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Button styling */
+.App button,
+.App div[class*='Button'] {
+  margin: 10px 0;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* Section spacing */
+.App > div + div {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+}
