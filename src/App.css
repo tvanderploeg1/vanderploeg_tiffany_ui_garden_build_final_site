@@ -6,59 +6,154 @@
   line-height: 1.6;
 }
 
-/* Override your component styles to make them work for layout */
-.App > div {
-  margin-bottom: 40px;
-  width: 100% !important;
-  max-width: none !important;
+/* Navigation Styles */
+.navigation {
+  background: #333;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-/* Make cards full width for layout */
-.App div[class*='Card'] {
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+  background-color: #555;
+}
+
+.navigation a.active {
+  background-color: #007bff;
+}
+
+/* Override your component styles to make them work for layout */
+.App > main {
+  min-height: 500px;
+}
+
+.App > main > div,
+.App div[class*="Card"] {
   width: 100% !important;
-  min-width: 100% !important;
+  max-width: none !important;
   padding: 20px !important;
   margin: 20px 0 !important;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 /* Make table full width */
 .App table,
-.App div[class*='Table'] {
+.App div[class*="Table"] {
   width: 100% !important;
   min-width: 100% !important;
+  border-collapse: collapse;
+}
+
+.App div[class*="TableCell"] {
+  padding: 10px !important;
+  border: 1px solid #ddd;
+}
+
+.App div[class*="TableHeader"] div[class*="TableCell"] {
+  background-color: #f8f9fa;
+  font-weight: bold;
 }
 
 /* Style the hero image area */
-.App div:first-child {
+.App div[class*="HeroImage"] {
   text-align: center;
   padding: 60px 20px !important;
   margin-bottom: 40px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Make images responsive */
 .App img {
-  max-width: 100%;
+  max-width: 300px;
   height: auto;
+  margin: 10px 0;
+  border-radius: 4px;
 }
 
 /* Button styling */
 .App button,
-.App div[class*='Button'] {
+.App div[class*="Button"] {
   margin: 10px 0;
   padding: 10px 20px;
   display: inline-block;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-/* Section spacing */
-.App > div + div {
-  border-top: 1px solid #eee;
-  padding-top: 30px;
+.App button:hover,
+.App div[class*="Button"]:hover {
+  background: #0056b3;
+}
+
+/* Text and Label styling */
+.App div[class*="Text"] {
+  margin: 8px 0 !important;
+  line-height: 1.6;
+}
+
+.App div[class*="Label"] {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0 !important;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* Card nesting */
+.App div[class*="Card"] div[class*="Card"] {
+  background: #f8f9fa;
+  margin: 15px 0 !important;
+  padding: 15px !important;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
   margin-top: 40px;
+  padding: 20px;
+  background: #333;
+  color: white;
+  border-radius: 8px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .App {
     padding: 10px;
+  }
+  
+  .navigation {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .navigation a {
+    text-align: center;
+  }
+  
+  .App div[class*="HeroImage"] {
+    font-size: 1.5rem;
+    padding: 40px 20px !important;
   }
 }
