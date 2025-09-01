@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <HeroImage 
-        src="https://via.placeholder.com/1200x400" 
+        src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" 
         alt="Portfolio Hero"
       >
         Tiffany Vanderploeg - Portfolio
@@ -57,7 +57,7 @@ const AboutPage: React.FC = () => {
     <Card>
       <Label>About Me</Label>
       <Text>Name: Tiffany Vanderploeg</Text>
-      <Text>Email: tiffany@example.com</Text>
+      <Text>Email: tvanderploeg@rrc.ca</Text>
       <Text>Location: Winnipeg, Manitoba</Text>
       <Text>I am a student learning web development and building my skills in React, JavaScript, and modern web technologies. I have completed coursework in component library development, code quality practices, and full-stack development.</Text>
     </Card>
@@ -73,18 +73,12 @@ const WorkPage: React.FC = () => {
         
         <Card>
           <Label>Component Library</Label>
+          <Img src="https://images.pexels.com/photos/785418/pexels-photo-785418.jpeg" alt="Component Library" />
           <Text>Built a reusable UI component library using React and TypeScript with Storybook documentation. Includes buttons, cards, tables, and form elements with comprehensive testing.</Text>
-          <Img src="https://via.placeholder.com/300x200" alt="Component Library" />
+          <a href="https://github.com/tvanderploeg1/vanderploeg_tiffany_ui_garden" target="_blank" rel="noopener noreferrer">
           <Button>View Project</Button>
+          </a>
           <Text>Technologies: React, TypeScript, Storybook, Styled Components, Jest</Text>
-        </Card>
-
-        <Card>
-          <Label>Weather Application</Label>
-          <Text>A responsive weather application that fetches data from an external API and displays current conditions and forecasts.</Text>
-          <Img src="https://via.placeholder.com/300x200" alt="Weather App" />
-          <Button>View Project</Button>
-          <Text>Technologies: React, JavaScript, CSS, Weather API, Responsive Design</Text>
         </Card>
       </Card>
     </div>
@@ -99,13 +93,11 @@ const SkillsPage: React.FC = () => {
       <Text>I am developing expertise in modern web development with a focus on front-end technologies and best practices.</Text>
       
       <Table>
-        <TableHeader>
-          <TableRow>
-            <TableCell>Category</TableCell>
-            <TableCell>Technologies</TableCell>
-            <TableCell>Proficiency</TableCell>
-          </TableRow>
-        </TableHeader>
+        <TableRow>
+          <TableHeader>Category</TableHeader>
+          <TableHeader>Technologies</TableHeader>
+          <TableHeader>Proficiency</TableHeader>
+        </TableRow>
         <TableRow>
           <TableCell>Languages</TableCell>
           <TableCell>JavaScript, TypeScript, HTML5, CSS3</TableCell>
@@ -126,11 +118,9 @@ const SkillsPage: React.FC = () => {
           <TableCell>Jest, React Testing Library</TableCell>
           <TableCell>Beginner</TableCell>
         </TableRow>
-        <TableFooter>
-          <TableRow>
-            <TableCell>Continuously learning and expanding skillset through coursework and projects</TableCell>
-          </TableRow>
-        </TableFooter>
+        <TableRow>
+          <TableFooter>Continuously learning and expanding skillset through coursework and projects</TableFooter>
+        </TableRow>
       </Table>
     </Card>
   );
@@ -141,29 +131,30 @@ const ResourcesPage: React.FC = () => {
   return (
     <div>
       <Card>
-        <Label>Development Resources</Label>
-        <Text>Here are the key resources I use for learning and development:</Text>
-        
-        <Card>
-          <Label>Documentation</Label>
-          <Img src="https://via.placeholder.com/50x50" alt="MDN" />
-          <Text>MDN Web Docs - Comprehensive web development documentation and tutorials</Text>
+        <Label>Documentation</Label>
+        <Img src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg" alt="MDN" />
+        <Text>MDN Web Docs - Comprehensive web development documentation and tutorials</Text>
+        <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">
           <Button>Visit MDN</Button>
-        </Card>
+        </a>
+      </Card>
 
-        <Card>
-          <Label>Framework Resources</Label>
-          <Img src="https://via.placeholder.com/50x50" alt="React" />
-          <Text>React Documentation - Official React documentation with examples and best practices</Text>
+      <Card>
+        <Label>Framework Resources</Label>
+        <Img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg" alt="React" />
+        <Text>React Documentation - Official React documentation with examples and best practices</Text>
+        <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
           <Button>Visit React Docs</Button>
-        </Card>
+        </a>
+      </Card>
 
-        <Card>
-          <Label>Community Support</Label>
-          <Img src="https://via.placeholder.com/50x50" alt="Stack Overflow" />
-          <Text>Stack Overflow - Community-driven Q&A platform for programming questions</Text>
+      <Card>
+        <Label>Community Support</Label>
+        <Img src="https://images.pexels.com/photos/9168798/pexels-photo-9168798.jpeg" alt="Stack Overflow" />
+        <Text>Stack Overflow - Community-driven Q&A platform for programming questions</Text>
+        <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">
           <Button>Visit Stack Overflow</Button>
-        </Card>
+        </a>
       </Card>
     </div>
   );

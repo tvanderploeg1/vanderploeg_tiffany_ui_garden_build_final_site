@@ -4,6 +4,7 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  text-align: center;
 }
 
 /* Navigation Styles */
@@ -68,14 +69,26 @@
 
 /* Style the hero image area */
 .App div[class*="HeroImage"] {
+  width: 100% !important;
+  height: 400px !important;
+  min-height: 400px !important;
+  padding: 80px 20px !important;
+  margin: 0 0 40px 0 !important;
+  background-size: cover !important;
+  background-position: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   text-align: center;
-  padding: 60px 20px !important;
-  margin-bottom: 40px;
-  background: #f4f4f4;
-  border-radius: 8px;
-  font-size: 2rem;
+  font-size: 2.5rem !important;
   font-weight: bold;
-  color: #333;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.App > main > div:first-child {
+  padding: 0 !important;
+  margin: 0 0 40px 0 !important;
 }
 
 /* Make images responsive */
@@ -131,9 +144,9 @@
 footer {
   text-align: center;
   margin-top: 40px;
-  padding: 20px;
-  background: #333;
-  color: white;
+  padding: 5px;
+  background: #945555;
+  color: rgb(29, 21, 21);
   border-radius: 8px;
 }
 
@@ -156,4 +169,41 @@ footer {
     font-size: 1.5rem;
     padding: 40px 20px !important;
   }
+
+  .App div[class*="Table"] {
+  width: 100% !important;
+  min-width: 100% !important;
+  border-collapse: collapse;
+  display: table !important;
+}
+
+.App div[class*="TableHeader"] {
+  display: table-header-group !important;
+}
+
+.App div[class*="TableRow"] {
+  display: table-row !important;
+}
+
+.App div[class*="TableCell"] {
+  display: table-cell !important;
+  padding: 12px !important;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.App div[class*="TableHeader"] div[class*="TableCell"] {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.App div[class*="TableFooter"] {
+  display: table-footer-group !important;
+}
+
+.App div[class*="TableFooter"] div[class*="TableCell"] {
+  background-color: #f0f0f0;
+  font-style: italic;
+  text-align: center;
+}
 }

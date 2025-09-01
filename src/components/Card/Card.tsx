@@ -10,7 +10,7 @@ const StyledCard = styled.div<CardProps>`
   border-radius: 8px;
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  max-width: 900px;
 
   @media (max-width: 768px) {
     padding: 15px;
