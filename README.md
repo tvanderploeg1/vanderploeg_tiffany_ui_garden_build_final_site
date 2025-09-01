@@ -59,29 +59,35 @@ npm start
 
 ## Features
 
-The portfolio showcases my component library by using the actual components I built:
+The portfolio is a multi-page website that showcases my component library:
 
-- **Basic Information**: Using Text and Card components
-- **Work**: Using Card, Button, Label, and Img components  
-- **Skills**: Using Table components with headers, rows, and cells
-- **Resources**: Using Card and Button components with links
-- **Developer Setup**: Using nested Card components for organization
+- **Home**: Welcome page with hero image and navigation
+- **About**: Basic information and personal details  
+- **Work**: Project showcase using Card, Button, Label, and Img components
+- **Skills**: Technical skills displayed in a Table with headers and cells
+- **Resources**: Development resources using Card and Button components with external links
+- **Developer Setup**: Development environment preferences and setup details
+
+## Navigation
+
+The portfolio includes a navigation bar that allows users to browse between different pages, demonstrating reasonably complex page navigation as required.
 
 ## Components Used
 
 From my component library:
-- Button
-- Card  
-- Text
-- Label
-- HeroImage
-- Img
-- Table (Header, Row, Cell, Footer)
+- Button (with external links)
+- Card (for layout and content organization)
+- Text (for paragraphs and descriptions)
+- Label (for headings and titles)  
+- HeroImage (for main portfolio banner)
+- Img (for project screenshots)
+- Table, TableRow, TableCell, TableHeader, TableFooter (for skills display)
 
 ## Technologies Used
 
 - React 20 + TypeScript
-- Component Library (Assignment 12/13)
+- React Router (for multi-page navigation)
+- Component Library (from Assignments 12/13)
 - Styled Components
 - Storybook
 - Husky + Pre-commit hooks

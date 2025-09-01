@@ -2,32 +2,18 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders portfolio heading', () => {
+test('renders without crashing', () => {
   render(<App />);
-  const headingElement = screen.getByText(/Tiffany Vanderploeg/i);
-  expect(headingElement).toBeInTheDocument();
 });
 
-test('renders basic information section', () => {
+test('renders navigation', () => {
   render(<App />);
-  const basicInfoElement = screen.getByText(/Basic Information/i);
-  expect(basicInfoElement).toBeInTheDocument();
+  const homeLink = screen.getByText('Home');
+  expect(homeLink).toBeInTheDocument();
 });
 
-test('renders work section', () => {
+test('renders app container', () => {
   render(<App />);
-  const workElement = screen.getByText(/Component Library/i);
-  expect(workElement).toBeInTheDocument();
-});
-
-test('renders skills section', () => {
-  render(<App />);
-  const skillsElement = screen.getByText(/Skills/i);
-  expect(skillsElement).toBeInTheDocument();
-});
-
-test('renders resources section', () => {
-  render(<App />);
-  const resourcesElement = screen.getByText(/Resources/i);
-  expect(resourcesElement).toBeInTheDocument();
+  const elements = screen.getAllByText(/Tiffany/i);
+  expect(elements.length).toBeGreaterThan(0);
 });
