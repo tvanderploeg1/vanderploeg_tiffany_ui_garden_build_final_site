@@ -40,7 +40,7 @@
 }
 
 .App > main > div,
-.App div[class*="Card"] {
+.App div[class*='Card'] {
   width: 100% !important;
   max-width: none !important;
   padding: 20px !important;
@@ -51,24 +51,24 @@
 
 /* Make table full width */
 .App table,
-.App div[class*="Table"] {
+.App div[class*='Table'] {
   width: 100% !important;
   min-width: 100% !important;
   border-collapse: collapse;
 }
 
-.App div[class*="TableCell"] {
+.App div[class*='TableCell'] {
   padding: 10px !important;
   border: 1px solid #ddd;
 }
 
-.App div[class*="TableHeader"] div[class*="TableCell"] {
+.App div[class*='TableHeader'] div[class*='TableCell'] {
   background-color: #f8f9fa;
   font-weight: bold;
 }
 
 /* Style the hero image area */
-.App div[class*="HeroImage"] {
+.App div[class*='HeroImage'] {
   width: 100% !important;
   height: 400px !important;
   min-height: 400px !important;
@@ -83,7 +83,7 @@
   font-size: 2.5rem !important;
   font-weight: bold;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .App > main > div:first-child {
@@ -101,7 +101,7 @@
 
 /* Button styling */
 .App button,
-.App div[class*="Button"] {
+.App div[class*='Button'] {
   margin: 10px 0;
   padding: 10px 20px;
   display: inline-block;
@@ -114,17 +114,17 @@
 }
 
 .App button:hover,
-.App div[class*="Button"]:hover {
+.App div[class*='Button']:hover {
   background: #0056b3;
 }
 
 /* Text and Label styling */
-.App div[class*="Text"] {
+.App div[class*='Text'] {
   margin: 8px 0 !important;
   line-height: 1.6;
 }
 
-.App div[class*="Label"] {
+.App div[class*='Label'] {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
@@ -134,7 +134,7 @@
 }
 
 /* Card nesting */
-.App div[class*="Card"] div[class*="Card"] {
+.App div[class*='Card'] div[class*='Card'] {
   background: #f8f9fa;
   margin: 15px 0 !important;
   padding: 15px !important;
@@ -155,55 +155,55 @@ footer {
   .App {
     padding: 10px;
   }
-  
+
   .navigation {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .navigation a {
     text-align: center;
   }
-  
-  .App div[class*="HeroImage"] {
+
+  .App div[class*='HeroImage'] {
     font-size: 1.5rem;
     padding: 40px 20px !important;
   }
 
-  .App div[class*="Table"] {
-  width: 100% !important;
-  min-width: 100% !important;
-  border-collapse: collapse;
-  display: table !important;
-}
+  .App div[class*='Table'] {
+    width: 100% !important;
+    min-width: 100% !important;
+    border-collapse: collapse;
+    display: table !important;
+  }
 
-.App div[class*="TableHeader"] {
-  display: table-header-group !important;
-}
+  .App div[class*='TableHeader'] {
+    display: table-header-group !important;
+  }
 
-.App div[class*="TableRow"] {
-  display: table-row !important;
-}
+  .App div[class*='TableRow'] {
+    display: table-row !important;
+  }
 
-.App div[class*="TableCell"] {
-  display: table-cell !important;
-  padding: 12px !important;
-  border: 1px solid #ddd;
-  vertical-align: top;
-}
+  .App div[class*='TableCell'] {
+    display: table-cell !important;
+    padding: 12px !important;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
 
-.App div[class*="TableHeader"] div[class*="TableCell"] {
-  background-color: #f8f9fa;
-  font-weight: bold;
-}
+  .App div[class*='TableHeader'] div[class*='TableCell'] {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
 
-.App div[class*="TableFooter"] {
-  display: table-footer-group !important;
-}
+  .App div[class*='TableFooter'] {
+    display: table-footer-group !important;
+  }
 
-.App div[class*="TableFooter"] div[class*="TableCell"] {
-  background-color: #f0f0f0;
-  font-style: italic;
-  text-align: center;
-}
+  .App div[class*='TableFooter'] div[class*='TableCell'] {
+    background-color: #f0f0f0;
+    font-style: italic;
+    text-align: center;
+  }
 }

@@ -33,16 +33,19 @@ const Navigation: React.FC = () => {
 const HomePage: React.FC = () => {
   return (
     <div>
-      <HeroImage 
-        src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" 
+      <HeroImage
+        src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg"
         alt="Portfolio Hero"
       >
         Tiffany Vanderploeg - Portfolio
       </HeroImage>
-      
+
       <Card>
         <Label>Welcome to My Portfolio</Label>
-        <Text>I am a web development student showcasing my skills and projects. Navigate through the pages to learn more about my work and experience.</Text>
+        <Text>
+          I am a web development student showcasing my skills and projects.
+          Navigate through the pages to learn more about my work and experience.
+        </Text>
         <Link to="/about">
           <Button>Learn More About Me</Button>
         </Link>
@@ -59,7 +62,12 @@ const AboutPage: React.FC = () => {
       <Text>Name: Tiffany Vanderploeg</Text>
       <Text>Email: tvanderploeg@rrc.ca</Text>
       <Text>Location: Winnipeg, Manitoba</Text>
-      <Text>I am a student learning web development and building my skills in React, JavaScript, and modern web technologies. I have completed coursework in component library development, code quality practices, and full-stack development.</Text>
+      <Text>
+        I am a student learning web development and building my skills in React,
+        JavaScript, and modern web technologies. I have completed coursework in
+        component library development, code quality practices, and full-stack
+        development.
+      </Text>
     </Card>
   );
 };
@@ -70,15 +78,28 @@ const WorkPage: React.FC = () => {
     <div>
       <Card>
         <Label>My Work</Label>
-        
+
         <Card>
           <Label>Component Library</Label>
-          <Img src="https://images.pexels.com/photos/785418/pexels-photo-785418.jpeg" alt="Component Library" />
-          <Text>Built a reusable UI component library using React and TypeScript with Storybook documentation. Includes buttons, cards, tables, and form elements with comprehensive testing.</Text>
-          <a href="https://github.com/tvanderploeg1/vanderploeg_tiffany_ui_garden" target="_blank" rel="noopener noreferrer">
-          <Button>View Project</Button>
+          <Img
+            src="https://images.pexels.com/photos/785418/pexels-photo-785418.jpeg"
+            alt="Component Library"
+          />
+          <Text>
+            Built a reusable UI component library using React and TypeScript
+            with Storybook documentation. Includes buttons, cards, tables, and
+            form elements with comprehensive testing.
+          </Text>
+          <a
+            href="https://github.com/tvanderploeg1/vanderploeg_tiffany_ui_garden"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button>View Project</Button>
           </a>
-          <Text>Technologies: React, TypeScript, Storybook, Styled Components, Jest</Text>
+          <Text>
+            Technologies: React, TypeScript, Storybook, Styled Components, Jest
+          </Text>
         </Card>
       </Card>
     </div>
@@ -90,8 +111,11 @@ const SkillsPage: React.FC = () => {
   return (
     <Card>
       <Label>Technical Skills</Label>
-      <Text>I am developing expertise in modern web development with a focus on front-end technologies and best practices.</Text>
-      
+      <Text>
+        I am developing expertise in modern web development with a focus on
+        front-end technologies and best practices.
+      </Text>
+
       <Table>
         <TableRow>
           <TableHeader>Category</TableHeader>
@@ -119,7 +143,10 @@ const SkillsPage: React.FC = () => {
           <TableCell>Beginner</TableCell>
         </TableRow>
         <TableRow>
-          <TableFooter>Continuously learning and expanding skillset through coursework and projects</TableFooter>
+          <TableFooter>
+            Continuously learning and expanding skillset through coursework and
+            projects
+          </TableFooter>
         </TableRow>
       </Table>
     </Card>
@@ -132,17 +159,33 @@ const ResourcesPage: React.FC = () => {
     <div>
       <Card>
         <Label>Documentation</Label>
-        <Img src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg" alt="MDN" />
-        <Text>MDN Web Docs - Comprehensive web development documentation and tutorials</Text>
-        <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">
+        <Img
+          src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg"
+          alt="MDN"
+        />
+        <Text>
+          MDN Web Docs - Comprehensive web development documentation and
+          tutorials
+        </Text>
+        <a
+          href="https://developer.mozilla.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button>Visit MDN</Button>
         </a>
       </Card>
 
       <Card>
         <Label>Framework Resources</Label>
-        <Img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg" alt="React" />
-        <Text>React Documentation - Official React documentation with examples and best practices</Text>
+        <Img
+          src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg"
+          alt="React"
+        />
+        <Text>
+          React Documentation - Official React documentation with examples and
+          best practices
+        </Text>
         <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
           <Button>Visit React Docs</Button>
         </a>
@@ -150,9 +193,19 @@ const ResourcesPage: React.FC = () => {
 
       <Card>
         <Label>Community Support</Label>
-        <Img src="https://images.pexels.com/photos/9168798/pexels-photo-9168798.jpeg" alt="Stack Overflow" />
-        <Text>Stack Overflow - Community-driven Q&A platform for programming questions</Text>
-        <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">
+        <Img
+          src="https://images.pexels.com/photos/9168798/pexels-photo-9168798.jpeg"
+          alt="Stack Overflow"
+        />
+        <Text>
+          Stack Overflow - Community-driven Q&A platform for programming
+          questions
+        </Text>
+        <a
+          href="https://stackoverflow.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button>Visit Stack Overflow</Button>
         </a>
       </Card>
@@ -166,17 +219,24 @@ const SetupPage: React.FC = () => {
     <div>
       <Card>
         <Label>My Development Environment</Label>
-        
+
         <Card>
           <Label>VS Code Configuration</Label>
-          <Text>Extensions: ES7+ React/Redux/React-Native snippets, Prettier, ESLint, Auto Rename Tag, Bracket Pair Colorizer</Text>
+          <Text>
+            Extensions: ES7+ React/Redux/React-Native snippets, Prettier,
+            ESLint, Auto Rename Tag, Bracket Pair Colorizer
+          </Text>
           <Text>Theme: Dark+ (default dark)</Text>
-          <Text>Settings: Auto-save enabled, format on save, integrated terminal</Text>
+          <Text>
+            Settings: Auto-save enabled, format on save, integrated terminal
+          </Text>
         </Card>
 
         <Card>
           <Label>Terminal Setup</Label>
-          <Text>Terminal: VS Code integrated terminal with PowerShell/Bash</Text>
+          <Text>
+            Terminal: VS Code integrated terminal with PowerShell/Bash
+          </Text>
           <Text>Shell: Git integration with custom aliases</Text>
           <Text>Tools: npm, git, Docker CLI</Text>
         </Card>
@@ -200,7 +260,7 @@ const App: React.FC = () => {
     <Router>
       <div className="App">
         <Navigation />
-        
+
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
